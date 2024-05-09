@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQm-CY-YLQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChampionRotationNames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jI1-zV-SHB">
+                                <rect key="frame" x="0.0" y="173" width="393" height="543"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRN-3g-J84">
+                                <rect key="frame" x="46" y="754" width="300" height="35"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99215686270000003" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.2156862745" green="0.20859875410000001" blue="0.058550030060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET CHAMPIONS" cornerStyle="capsule" titleAlignment="center">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getChampionsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Id5-0F-SWr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jI1-zV-SHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GIk-kZ-Q3y"/>
+                            <constraint firstItem="kRN-3g-J84" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LHI-gw-k4A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kRN-3g-J84" secondAttribute="bottom" constant="29" id="P1a-qs-rBJ"/>
+                            <constraint firstItem="kRN-3g-J84" firstAttribute="top" secondItem="jI1-zV-SHB" secondAttribute="bottom" constant="38" id="Zg5-lC-jjS"/>
+                            <constraint firstItem="kRN-3g-J84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="kFB-vc-H6y"/>
+                            <constraint firstItem="jI1-zV-SHB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="rLC-Uw-mJE"/>
+                            <constraint firstItem="jI1-zV-SHB" firstAttribute="centerX" secondItem="kRN-3g-J84" secondAttribute="centerX" id="z31-d1-vHY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7pr-Ni-dzU"/>
+                    <connections>
+                        <outlet property="tableView" destination="jI1-zV-SHB" id="roA-cF-Kbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.4656488549617" y="14.788732394366198"/>
+        </scene>
+        <!--View Controller Main Screen-->
+        <scene sceneID="qnl-nb-Xb9">
+            <objects>
+                <viewController id="VbV-Xa-F0l" customClass="ViewControllerMainScreen" customModule="ChampionRotationNames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mqN-IQ-jNp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEKLY FREE CHAMPION ROTATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-wV-mvj">
+                                <rect key="frame" x="40" y="61" width="313" height="90"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.99215686270000003" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="EHd-W8-qnk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4q-X3-pae">
+                                <rect key="frame" x="40" y="289" width="313" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Haw-T7-jKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="FREE CHAMPION ROTATION"/>
+                                <buttonConfiguration key="configuration" style="filled" title="FREE CHAMPION ROTATION" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="0.99607843137254903" green="0.99215686274509807" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kUL-ZF-okS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="18y-C9-myK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NmW-wV-mvj" firstAttribute="trailing" secondItem="R4q-X3-pae" secondAttribute="trailing" id="AfI-Z9-mFz"/>
+                            <constraint firstItem="NmW-wV-mvj" firstAttribute="centerX" secondItem="mqN-IQ-jNp" secondAttribute="centerX" id="L1j-l0-AJ4"/>
+                            <constraint firstItem="NmW-wV-mvj" firstAttribute="top" secondItem="mqN-IQ-jNp" secondAttribute="topMargin" constant="-42" id="TfC-hH-Yea"/>
+                            <constraint firstItem="NmW-wV-mvj" firstAttribute="leading" secondItem="R4q-X3-pae" secondAttribute="leading" id="jr4-D7-cfB"/>
+                            <constraint firstItem="18y-C9-myK" firstAttribute="bottom" secondItem="R4q-X3-pae" secondAttribute="bottom" constant="415" id="xfa-UO-vjo"/>
+                            <constraint firstItem="NmW-wV-mvj" firstAttribute="leading" secondItem="18y-C9-myK" secondAttribute="leading" constant="40" id="z7t-y2-p4m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hWE-Xd-2b6"/>
+                    <connections>
+                        <outlet property="myLabel" destination="NmW-wV-mvj" id="994-Ph-ioA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Twc-kH-Cnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.32061068702291" y="15.492957746478874"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e0c-dC-quB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bQm-CY-YLQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pqX-9g-Qva">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VbV-Xa-F0l" kind="relationship" relationship="rootViewController" id="awd-Qa-hWE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mi2-9k-B0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-608.39694656488552" y="15.492957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
